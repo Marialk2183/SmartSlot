@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #6a8e5a; /* Updated to a more vibrant shade */
+    --secondary-color: #9c774f; /* Updated to a more vibrant shade */
+    --background-color: linear-gradient(to right, #6a8e5a, #9c774f); /* Adding gradient */
+    --text-color: #333;
+    --button-hover-color: #8dac76;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: var(--background-color);
+    color: var(--text-color);
+}
+
+button {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design Features */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    header, footer {
+        text-align: center;
+    }
+}

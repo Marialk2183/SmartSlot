@@ -1,0 +1,59 @@
+/* Header Styles */
+header {
+    background-color: #6a8e5a; /* Forest green used as primary color */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* Distinct styles for login and signup links to make them stand out */
+nav ul li a.login-button, nav ul li a.signup-button {
+    padding: 8px 12px;
+    margin-left: 10px;
+    background-color: #9c774f; /* Warm brown used for secondary color */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a.login-button:hover {
+    background-color: #8dac76; /* Lighter green for hover effect */
+}
+
+nav ul li a.signup-button {
+    background-color: #6a8e5a; /* Consistent with primary header color */
+}
+
+nav ul li a.signup-button:hover {
+    background-color: #8dac76; /* Lighter green for hover effect */
+}
